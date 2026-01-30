@@ -1,0 +1,33 @@
+# 1. Initialize Node.js & Hardha
+
+npm init -y
+npm install --save-dev "hardhat@^2.0.0" @nomicfoundation/hardhat-toolbox
+npx hardhat init
+# -> Select "Create a JavaScript project" -> Hit Enter for all prompts.
+
+# 2. Install Python Dependencies
+
+pip install web3 pycryptodome requests matplotlib pandas seaborn
+
+# 3. Start the Blockchain
+
+npx hardhat node
+
+# 4. Deploy the Contract
+
+npx hardhat run scripts/deploy.js --network localhost
+
+# 5. Start the python Server
+
+uvicorn code_file:app --reload
+
+# 6. Make a wallet
+
+1)Login into metamask
+2)Add a custom network with the blockchain's url
+3)Import an account using your private key
+
+# 7. Web
+
+cd client
+npm start
