@@ -27,7 +27,13 @@ uvicorn code_file:app --reload
 2)Add a custom network with the blockchain's url
 3)Import an account using your private key
 
-# 7. Web
+# 7. Set up React Project
+
+npx create-react-app client
+cd client
+npm install ethers
+
+# 8. Start the website
 
 cd client
 npm start
